@@ -50,7 +50,7 @@ func TestMainForRangeModels(t *testing.T) {
 func TestVarDeclInGenerateRating(t *testing.T) {
 
 	if !checkVarDeclWithinFor("vehResult", "feedbackResult") {
-		t.Error("Variable `vehresult` of type `feedbackResult` is not declared")
+		t.Error("Variable `vehResult` of type `feedbackResult` is not declared")
 	}
 
 	if !checkVarDeclWithinFor("vehRating", "rating") {
@@ -80,7 +80,7 @@ func TestIfStmt(t *testing.T) {
 
 // Task 8: Set variable values
 func TestSetVarValues(t *testing.T) {
-	if !checkSetValues(ifBlock, "vehRating=5.0") {
+	if !checkSetValues(ifBlock, "vehRating = 5.0") {
 		t.Error("vehRating not set")
 	}
 	if !checkSetValues(ifBlock, "vehResult.feedbackTotal++") {
